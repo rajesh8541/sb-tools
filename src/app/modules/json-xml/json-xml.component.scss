@@ -1,0 +1,33 @@
+@import '../../../styles/responsive';
+
+.tool-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container {
+  padding: 35px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-gap: 10px;
+}
+
+@include smallDesktopAndLess {
+  .tool-container {
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+<app-sb-heading [title]="title" [subtitle]="subtitle"></app-sb-heading>
+<div class="card-container">
+  <ul class="tools">
+    <li class="cards" *ngFor="let module of moduleList">
+      <a
+        class="item-card"
+        routerLink="{{ module.slug }}"
+        title="{{ module.title }}"
+      >
+        <span class="module-title">{{ module.title }}</span>
+      </a>
+    </li>
+  </ul>
+</div>

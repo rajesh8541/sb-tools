@@ -1,0 +1,8 @@
+<div class="related-tools">
+  <h3>Related Tools</h3>
+  <div *ngFor="let relatedTool of relatedTools">
+    <a [routerLink]="relatedTool.slug" title="{{ relatedTool.title }}">
+      {{ relatedTool.title }}
+    </a>
+  </div>
+</div>

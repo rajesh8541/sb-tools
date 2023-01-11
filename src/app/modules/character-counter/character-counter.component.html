@@ -1,0 +1,10 @@
+<h2>Please paste or write your text below</h2>
+<div>
+    <textarea class="custom-textarea-width" (input)="onSearchChange($event)"  rows="10"></textarea>
+</div>
+<div>
+    <h2>{{inputCharacterArray.length - removeParaLine}} Characters</h2>
+    <h2>{{totalWordsCount}} Words</h2>
+    <h2>{{totalSentenceCount.length -1}} Sentences</h2>
+    <h2>{{totalParagraphCount.length}} Paragraphs</h2>
+</div>

@@ -1,0 +1,170 @@
+.main-conatiner {
+    width: 99.5%;
+    height: auto;
+    border: solid rgb(182, 182, 182);
+    border-radius: 5px;
+    display: block;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+.class-heading {
+    width: 98%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid rgb(182, 182, 182);
+    margin-left: 10px;
+    padding-bottom: 5px;
+
+}
+
+.class-blank1 {
+    width: 99%;
+    height: 40vh;
+    overflow: auto;
+
+}
+
+.class-blank2 {
+    width: 99%;
+    height: 10vh;
+    display: flex;
+    justify-content: end;
+
+}
+
+.class-button1 {
+    width: 120px;
+    height: 7vh;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+   
+    font-size: medium;
+}
+
+.class-button2 {
+    width: 120px;
+    height: 7vh;
+    background-color: rgb(14, 241, 14);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color:white;
+    font-size: medium;
+}
+
+.classbutton {
+    margin: 5px;
+}
+
+.class-method-url {
+    display: flex;
+    justify-content: space-between;
+    border: 0.5px solid black;
+    border-color: rgb(180, 180, 180);
+    border-radius: 5px;
+    border-style: dashed;
+    height: 23vh;
+    width: 95%;
+    margin-left: 30px;
+}
+
+.class-method {
+    width: 300px;
+    height: 7vh;
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 0px;
+    border: 0.5px solid black;
+    border-color: rgb(180, 180, 180);
+}
+
+select {
+    cursor: pointer;
+}
+
+.class-url {
+    width: 850px;
+    height: 6vh;
+    border-radius: 5px;
+    margin: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    border: 0.5px solid black;
+    border-color: rgb(180, 180, 180);
+    text-align: left;
+}
+
+input,
+input::placeholder {
+    font: 20px/3 sans-serif;
+}
+
+.method {
+    padding-left: 10px;
+}
+
+.subclass {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 45px;
+}
+
+.class-header {
+    width: 695px;
+    height: 7vh;
+    border-radius: 5px;
+    margin: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    border: 0.5px solid black;
+    border-color: rgb(180, 180, 180);
+    text-align: left;
+}
+
+.header {
+    padding-top: 14px;
+}
+
+.class-add {
+    height: 7vh;
+    width: 40px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    border-color: rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+.classadd {
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+ul#list-group li {
+    display: inline;
+}
+
+.example-box {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.main {
+    display: flex;
+    width: 90%;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: flex-start;
+    border: 0.5px solid black;
+    border-color: rgb(180, 180, 180);
+    border-radius: 5px;
+    border-style: dashed;
+
+}

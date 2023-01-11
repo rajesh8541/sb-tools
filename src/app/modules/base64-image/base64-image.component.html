@@ -1,0 +1,56 @@
+
+<div class="main-container">
+    <div class="base-conatiner">
+        <div class="class-heading"><h1>Base64 to Image</h1></div>
+        <div class="class-body">
+            <div class="class-textarea">
+                <div class="class-title-button">
+                    <div style="color: rgb(60, 60, 116); padding-left: 10px;"><h1> Enter Base64 String</h1></div>
+                    
+                    <div class="class-FDC">
+                            <img src="../../../assets/sample.png" style="width: 60px; height: 25px; cursor: pointer; padding-right: 5px;"alt="">
+                            <img src="../../../assets/folder.png" style="width: 25px; height: 27px; padding-right: 5px; cursor: pointer;"alt="">
+                            <img src="../../../assets/delete.png" style="width: 25px; height: 25px; cursor: pointer;"alt="">                            
+                            <img src="../../../assets/copied.png" style="width: 33px; height: 28px; cursor: pointer;"alt="">
+                    </div>
+                </div>
+                <div class="class-textbox">
+                    <textarea name="" (ngModel) ="str" id="" cols="" rows=""></textarea>
+                </div>
+            </div>
+            <div class="class-option">
+                <div class="class-button-checkbox">   
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Auto Update</label><br>
+                </div>
+                <div>
+                    <button class="class-button" (click)="convertImage(myTextarea)">Generate Image</button>
+                    </div>
+                <div class="class-file-url">
+                        <div>
+                            <button class="class-btn">File</button>
+                        </div>
+                        <div>
+                            <button class="class-btn">Url</button>
+                        </div>
+                </div>
+                <div>
+                    <button class="class-button">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="image-conatiner">
+        <div>
+            <img src="../../../assets/image.png" width="30px" height="30px" alt="" style="display: block; margin-left: auto; margin-right: auto; padding-top: 5px;">
+            <h2 style="color:blue; text-align: center;">Image Preview</h2>
+            <img [src]="img" alt="">
+            
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <app-sb-related-tools></app-sb-related-tools>
+</div>

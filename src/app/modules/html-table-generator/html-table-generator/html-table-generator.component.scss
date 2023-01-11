@@ -1,0 +1,77 @@
+.c-mb-20{
+    margin-bottom: 20px;
+}
+.c-mt-10{
+   margin-top: 10px;
+}
+label {
+    font-weight: bold;
+}
+.w-100 {
+    width: 100%;
+}
+.table-input{
+    border: none;
+    outline: none;
+}
+.table-preview{
+    font-size: 15px;
+    font-weight: 500;
+}
+.form-c-control{
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+.inp-color{
+    height: 34px;
+    padding: 6px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.mainDiv{
+    display: flex;
+}
+.propertySection{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.outputSection{
+    width: 50%;
+    margin-left: 50px;
+}
+.commonLayout{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (min-width: 1024px){
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+@media screen and (min-width: 1216px){
+.container:not(.is-max-desktop) {
+    max-width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+@media screen and (min-width: 1408px){
+.container:not(.is-max-desktop):not(.is-max-widescreen) {
+    max-width: 1344px;
+    margin-left: auto;
+    margin-right: auto;
+}}

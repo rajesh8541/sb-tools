@@ -1,0 +1,67 @@
+
+.main_container
+{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+.sub_container1
+{
+    padding: 5px;
+    padding-top: 25px;
+    border: solid rgb(189, 189, 194);
+    border-radius: 10px;
+    width: 25%;
+    height: 39vh;
+}
+.sub_container2
+{
+    border: solid rgb(189, 189, 194);
+    border-radius: 10px;
+    height: 82vh;
+  
+}
+.class_option
+{
+    margin-left: 25px;
+    padding: 5px;
+    
+}
+.option
+{   width: 250px;
+    height: 7vh;
+    background-color: rgb(189, 189, 194);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.option1
+{
+    width: 250px;
+    height: 5vh;
+    background-color: rgb(189, 189, 194);
+    border-radius: 10px;
+    text-align:center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.option2
+{
+    width: 250px;
+    height: 7vh;
+    border: none;
+    border-radius: 10px;
+    text-align:center;
+    margin: 5px;
+    padding-top: 4px;
+    background-color: rgb(8, 138, 62);
+}
+button.option:hover,button.option:active{font-size: 150%;}
+input.option:hover,input.option:active{font-size: 150%;}
+button.option2:hover,button.option2:active{font-size: 150%;}
+
+.class_output
+{  
+  display: flex;
+  justify-content: center;
+}

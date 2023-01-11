@@ -1,0 +1,123 @@
+
+<div class="container">
+    <h1>HTML Table Generator</h1>
+    <div class="mainDiv">
+        <div class="propertySection">
+            <div class="">
+                <div class="c-mb-20">
+                    <label for="">Add rows</label><br>
+                    <input class="c-mt-10 form-c-control" type="number" name="" id="" min="1" (input)="createTableRow(rowCount.value);onGenerateHtmlForTable()" value="3" #rowCount>
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Give CSS Using</label><br>
+                    <select class="c-mt-10 form-c-control" (input)="addGiveCssUsing($event);onGenerateHtmlForTable()" #userGiveCssUsing>
+                        <option value="tag">Table Tag</option>
+                        <option value="class">Table Class</option>
+                        <option value="id">Table ID</option>
+                    </select>
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Width (px)</label><br>
+                    <input class="c-mt-10 form-c-control" type="number" name="" id="" min="1" [(ngModel)]="userWidth" (click)="onGenerateHtmlForTable()">
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Header Background-Color</label><br>
+                    <input class="c-mt-10 w-100 inp-color" type="color" [(ngModel)]="userHeaderBgColor" (change)="onGenerateHtmlForTable()">
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Header Font-Color</label><br>
+                    <input class="c-mt-10 w-100 inp-color" type="color" name="" id="" min="1" [(ngModel)]="userHeaderFontColor" (change)="onGenerateHtmlForTable()">
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Border-Collapse</label><br>
+                    <select class="c-mt-10 form-c-control" [(ngModel)]="userBorderCollapse" (click)="onGenerateHtmlForTable()">
+                        <option value="collapse">Collapse</option>
+                        <option value="separate">Separate</option>
+                    </select>
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Border-Width (px)</label><br>
+                    <input class="c-mt-10 form-c-control" type="number" name="" id="" min="1" [(ngModel)]="userBorderWidth" (click)="onGenerateHtmlForTable()">
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Border-Style</label><br>
+                    <select class="c-mt-10 form-c-control" [(ngModel)]="userBorderStyle" (click)="onGenerateHtmlForTable()">
+                        <option value="solid">Solid</option>
+                        <option value="dotted">Dotted</option>
+                        <option value="dashed">Dashed</option>
+                    </select>
+                </div>
+            </div>
+            <div class="">
+                <div class="c-mb-20">
+                    <label for="">Add Columns</label><br>
+                    <input class="c-mt-10 form-c-control" type="number" name="" id="" min="1" (input)="createTableColumns($event);onGenerateHtmlForTable()" value="3">
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Text-Align</label><br>
+                    <select class="c-mt-10 form-c-control" [(ngModel)]="userTextAlign" (click)="onGenerateHtmlForTable()">
+                        <option value="center">center</option>
+                        <option value="left">left</option>
+                        <option value="right">right</option>
+                    </select>
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Padding (px)</label><br>
+                    <input class="c-mt-10 form-c-control" type="number" name="" id="" min="1" (click)="onGenerateHtmlForTable()" [(ngModel)]="userPadding">
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Body Background-Color</label><br>
+                    <input class="c-mt-10 w-100 inp-color" type="color" [(ngModel)]="userBodyBgColor" (change)="onGenerateHtmlForTable()">
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Body Font-Color</label><br>
+                    <input class="c-mt-10 w-100 inp-color" type="color" name="" id="" min="1" [(ngModel)]="userBodyFontColor" (change)="onGenerateHtmlForTable()">
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Height (px)</label><br>
+                    <input class="c-mt-10 form-c-control" type="number" name="" id="" min="1" [(ngModel)]="userHeight" (click)="onGenerateHtmlForTable()">
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Border-Spacing (px)</label><br>
+                    <input class="c-mt-10 form-c-control" type="number" min="1" [(ngModel)]="userBorderSpacing" (click)="onGenerateHtmlForTable()">
+                </div>
+                <div class="c-mb-20">
+                    <label for="">Border-Color</label><br>
+                    <input class="c-mt-10 w-100 inp-color" type="color" name="" id="" min="1" [(ngModel)]="userBorderColor" (change)="onGenerateHtmlForTable();">
+                </div>
+            </div>
+        </div>
+
+        <div class="outputSection">
+            <h2>Table Preview <span class="table-preview">(Enter values in by clicking on the Cell)</span></h2>
+            <table id="demTable" class="demTable c-mb-20" [style.border-collapse]="userBorderCollapse"
+                [style.border-spacing.px]="userBorderSpacing" [style.border-width.px]="userBorderWidth"
+                [style.border-style]="userBorderStyle" [style.border-color]="userBorderColor">
+                <thead>
+                    <tr>
+                        <th *ngFor="let row of userColumns;let i = index" [style.background-color]="userHeaderBgColor"
+                            [style.color]="userHeaderFontColor" [style.padding.px]="userPadding"
+                            [style.border-width.px]="userBorderWidth" [style.border-style]="userBorderStyle"
+                            [style.border-color]="userBorderColor">Header {{i + 1}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let row of userRows;let rowIndex = index">
+                        <td *ngFor="let row of userColumns;let columnIndex = index" [style.padding.px]="userPadding"
+                            [style.width.px]="userWidth" [style.height.px]="userHeight"
+                            [style.background-color]="userBodyBgColor" [style.border-width.px]="userBorderWidth"
+                            [style.border-style]="userBorderStyle" [style.border-color]="userBorderColor"
+                            [style.text-align]="userTextAlign" [style.color]="userBodyFontColor">
+                            <input class="table-input" [style.color]="userBodyFontColor" [style.background-color]="userBodyBgColor" [style.width.px]="userWidth" [style.text-align]="userTextAlign"  (input)="codeForUpdatingArrayOnInput($event,rowIndex,columnIndex)">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="c-mt-10">
+                <app-sb-textarea [type]="'HTML Table Code'" class="text-area" [parentData]="outputText">
+                </app-sb-textarea>
+            </div>
+        </div>
+    </div>
+</div>
+

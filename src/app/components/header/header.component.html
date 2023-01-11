@@ -1,0 +1,36 @@
+<nav>
+  <div class="logo">
+    <a target="_blank" href="https://www.softobotics.com/"
+      ><img src="assets/logo.svg" alt="menu" height="55"
+    /></a>
+  </div>
+  <input type="checkbox" id="click" />
+  <label for="click" class="menu-btn">
+    <i
+      ><img src="../../../assets/menu.svg" alt="menu" width="30" height="30"
+    /></i>
+  </label>
+  <ul>
+    <li>
+      <a
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a routerLinkActive="active" routerLink="/online-rar-extractor/"
+        >RAR Extractor</a
+      >
+    </li>
+    <li>
+      <a routerLinkActive="active" routerLink="/xml-to-json-convertor/"
+        >XML to JSON</a
+      >
+    </li>
+    <li>
+      <a target="_blank" href="https://www.softobotics.com/#contact">About us</a>
+    </li>
+  </ul>
+</nav>

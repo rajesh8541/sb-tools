@@ -1,0 +1,112 @@
+.main-container
+{
+    width: 90%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fdfafae8;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.base-conatiner{
+    height: auto;
+   
+   
+}
+.class-heading{
+    text-align: center;
+    color: rgb(33, 39, 95);
+    border-bottom: solid rgb(1, 5, 0);
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.class-body{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 3px solid black;
+}
+.class-title-button{
+    display:flex;
+    justify-content: space-between;
+    // border: solid yellow;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.class-textarea{
+    width: 73%;
+}
+.class-option{
+    // border: solid red;
+    width: 25%;
+}
+.class-FDC
+{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+}
+.class-button{
+    width: 180px;
+    height: 8vh;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(122, 127, 173);
+    margin: 5px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+.class-btn
+{
+    width: 85px;
+    height: 8vh;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(122, 127, 173); 
+    margin:5px;
+    border: none;
+    cursor:pointer;
+}
+.class-file-url
+{
+    display: flex;
+    justify-content: center;
+
+}
+.class-button-checkbox
+{
+    width: 180px;
+    height: 5vh;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 70px;
+    cursor:pointer;
+}
+.class-textbox
+{
+    margin-left: 10px;
+    
+}
+textarea {
+    width: 100%;
+    height: 40vh;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: vertical;
+  }
+
+
+.image-conatiner{
+    height: 50vh;
+    padding-top: 10px;
+     
+}

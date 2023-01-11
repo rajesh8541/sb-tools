@@ -1,0 +1,65 @@
+
+        <app-sb-heading [title]="title" [subtitle]="subtitle"></app-sb-heading>
+            <div class="tool-container">
+                    <app-sb-textarea [type]="'input'" class="text-area"(event)="childInputText=$event"></app-sb-textarea>
+                        <div class="button-align">
+                            <button class="btn" (click)="convert()">Beautify JSON </button>
+                        </div>
+                    <app-sb-textarea [type]="'output'" class="text-area" [parentData]="formatted_input"></app-sb-textarea>
+            </div>
+
+            <div class="grid-container text-container">
+                <div>
+                    <h2 style="text-align: center">JSON Beautifier</h2>
+                        <p>
+                            JSON format is used for serializing and transmitting structured data over
+                            network connection. JSON commanly compresses blank space to reduce the
+                            amount of data transmitted to the server.
+                        </p>
+                        <p>
+                            Due to json blank space compressing technique will help in reducing the
+                            file size which is transfered to the server, Unlike XML because of that
+                            JSON become standard for data interchange over network.
+                        </p>
+                        <p>
+                            Most of the language support the JSON data format.
+                        </p>
+                        <h2>
+                            Why use JSON Beautifier?
+                        </h2>
+                        <p>
+                            Our online tool offers easy way to Beautify JSON data.<br />
+                            If the JSON data consist the image url then it will previvew that image in
+                            the data.
+                        </p>
+                        <h2>How to use this tool?</h2>
+                        <p>Just writte or copy pate the JSON data in the input box.</p>
+                        <p>
+                            Once you paste your code just click the BEautify JSON button, Beautified
+                            code will be genrated on the output box then user can copy or share the
+                            file.
+                        </p>
+                        <h2>JSON Data Types</h2>
+                        <p>
+                            The data types supported by the JSON are below:
+                        </p>
+                        <ul>
+                            <li>String</li>
+                            <li>Number</li>
+                            <li>Boolean</li>
+                            <li>NULL</li>
+                            <li>Array</li>
+                            <li>Object</li>
+                        </ul>
+                        <p>Here is an example of rough JSON data:<br /></p>
+                        <p>{{example}}</p>
+                </div>
+                <div>
+                            <app-sb-related-tools></app-sb-related-tools>
+                </div>
+        </div>
+
+
+
+
+

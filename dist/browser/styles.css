@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.btn {
+  padding: 10px 20px;
+  border: solid 1px #17a2b8;
+  margin: 5px 0px;
+  border-radius: 5px;
+  background: #17a2b8;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.text-center {
+  text-align: center;
+}
+.text-area {
+  width: 40%;
+}
+@media (max-width: 992px) {
+  .text-area {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map*/

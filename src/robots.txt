@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.tools.softobotics.com/tools.xml
+Host: https://www.tools.softobotics.com

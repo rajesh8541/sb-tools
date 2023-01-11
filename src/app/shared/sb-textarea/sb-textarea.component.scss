@@ -1,0 +1,32 @@
+textarea {
+  width: -webkit-fill-available;
+  border: solid 1px grey;
+  border-radius: 0 0 5px 5px;
+  resize: none;
+  padding: 10px;
+}
+
+.icons-box {
+  background-color: #727272;
+  padding: 8px 10px 5px 10px;
+  color: white;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+}
+
+.icons-main {
+  color: grey;
+  background: #f3f3f3;
+}
+
+
+
+
+
+
+
+
+

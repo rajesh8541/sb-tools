@@ -1,0 +1,15 @@
+<app-sb-heading [title]="title" [subtitle]="subtitle"></app-sb-heading>
+<div class="tool-container">
+        <textarea cols=""  rows="10" #code class="case-converter" (change)="onChange($event)"></textarea>
+
+        <div class="case-btn">
+            <button class="btn" (click)="code.value = sentenceCase()">Sentence Case</button>
+            <button class="btn" (click)="code.value = lowerCase()">Lower Case</button>
+            <button class="btn" (click)="code.value = upperCase()">Upper Case</button>
+            <button class="btn" (click)="code.value = capitalizedCase()">Capitalized Case</button>
+            <button class="btn" (click)="code.value = alternatingCase()">Alternating Case</button>
+            <button class="btn" (click)="code.value = titleCase()">Title Case</button>
+            <button class="btn" (click)="code.value = inverseCase()">Inverse Case</button>
+        </div>
+        
+</div>

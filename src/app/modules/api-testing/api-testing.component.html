@@ -1,0 +1,73 @@
+<div class="main-conatiner">
+    <div class="class-heading">
+        <h1>Test Your API</h1>
+    </div>
+    <div class="class-blank">
+        <div class="class-blank1">
+            {{posts | json}}
+        </div>
+        <div class="class-blank2">
+            <div class="classbutton"><button class="class-button1" (click)="testMethod()"><b>Test</b></button></div>
+            <div class="classbutton"><button class="class-button2" (click)="testApi()"><b>New</b></button></div>
+        </div>
+    </div>
+
+    <div class="class-method-url">
+        <div>
+            <h3 class="method">Method</h3>
+            <select #selects class="class-method" (change)="selectMethod(selects.value)">
+                <option default>Select Method</option>
+                <option value="0">GET</option>
+                <option value="1">POST</option>
+                <option value="2">PUT</option>
+                <option value="3">DELETE</option>
+            </select>
+        </div>
+        <div>
+            <h3 class="method">URL</h3>
+            <input type="text" class="class-url" #url placeholder="enter api url" (change)="getInput(url.value)">
+        </div>
+    </div>
+
+
+    <form [formGroup]="form">
+        <div class="main">
+            <div formArrayName="dataArray" class="example-list">
+                <h3 class="method">QueryString</h3>
+                <div *ngFor="let a of dataArray?.controls;let i = index" [formGroupName]="i" class="example-box">
+                    <input type="text" class="class-method" formControlName="queryString" placeholder="QueryString">
+                    <h1 class="class-equal">=</h1>
+                    <input type="text" class="class-header" formControlName="name" placeholder="Value" id="name" />
+                    <div class="class-remove">
+                        <button class="class-add" (click)="removeTextQuery(i)"> <b>-</b> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="classadd">
+                <button class="class-add" (click)="addInputQuery()">+</button>
+            </div>
+        </div>
+    </form>
+
+    <form [formGroup]="form1">
+        <div class="main">
+            <div formArrayName="dataArray1" class="example-list">
+                <h3 class="method">Header</h3>
+                <div *ngFor="let a of dataArray1?.controls;let i = index" [formGroupName]="i" class="example-box">
+                    <input type="text" class="class-method" formControlName="header" placeholder="Content-Type">
+                    <h1 class="class-equal">=</h1>
+                    <input type="text" class="class-header" formControlName="name" placeholder="Value" id="name" />
+                    <div class="class-remove">
+                        <button class="class-add" (click)="removeTextHeader(i)"> <b>-</b> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="classadd">
+                <button class="class-add" (click)="addInputHeader()">+</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div>
+    <app-sb-related-tools></app-sb-related-tools>
+</div>

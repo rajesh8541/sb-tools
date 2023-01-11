@@ -1,0 +1,111 @@
+<app-sb-heading [title]="title" [subtitle]="subtitle"></app-sb-heading>
+
+<div class="tool-container">
+  <app-sb-textarea
+    [type]="'input'"
+    class="text-area"
+    (event)="childInputText = $event"
+  ></app-sb-textarea>
+  <div class="button-align">
+    <button class="btn" (click)="convert()">JSON TO XML</button>
+  </div>
+  <app-sb-textarea
+    [type]="'output'"
+    class="text-area"
+    [parentData]="outputText"
+  ></app-sb-textarea>
+</div>
+
+<div class="grid-container text-container">
+  <div>
+    <h2>JSON to XML Converter</h2>
+    <p>
+      This is an online tool that converts your JSON format data to XML data
+      format and vice versa. It converts JSON objects into an XML tree
+      structure.
+    </p>
+    <h2>How to use this JSON TO XML tool?</h2>
+    <p>The tool we designed is easy to use. Kindly follow the below steps.</p>
+    <ol>
+      <li>Write or paste the JSON code into the input box.</li>
+      <li>
+        Press the &ldquo;JSON to XML button&rdquo; to convert the data into XML.
+      </li>
+      <li>
+        If you want to convert XML to JSON, click on the &ldquo;XML to
+        JSON&rdquo; button.
+      </li>
+      <li>
+        You can download or copy your result by clicking on the download or copy
+        button.
+      </li>
+    </ol>
+    <h2>What is JSON?</h2>
+    <p>
+      JSON is an open standard record configuration and information trade design
+      that utilizes intelligible text to store and send information objects
+      comprising of property estimation combines and clusters.
+    </p>
+    <p>
+      It is a common data format with diverse uses in electronic data
+      interchange, including that of web applications with servers.
+    </p>
+    <p>
+      JSON format syntax has been derived from Javascript, but it is a language
+      independent.
+    </p>
+    <p>
+      JSON structure comprise of item or exhibit of articles , Objects are
+      key-esteem sets encased in rearranged commas. Exhibits are additionally
+      informational indexes containing key-esteem sets encased in square
+      sections. The entire code is encased in wavy sections.
+    </p>
+    <p>
+      JSON structure is as simple Javascript object structure, So it's very easy
+      to understand.
+    </p>
+    <h2>What is XML?</h2>
+    <p>
+      XML represents Extensible Markup Language is a markup language like
+      HTML,it was begun from SGML for web use. It is utilized to address
+      organized text as well as to move information across the web.
+    </p>
+    <p>
+      &nbsp;XML is an extensible language, so you can use it to create your own
+      tags and rules of markup languages like HTML.
+    </p>
+    <p>
+      The XML structure is very easy to use who have little bit knowledge of
+      HTML and XML file should have the root element.
+    </p>
+    <p>
+      The defined tags used inside the root element contain attributes that are
+      objects (key-value pairs).
+    </p>
+    <p>The whole XML is structured to obtain a hierarchal or tree structure.</p>
+    <h2>Why do you need JSON to XML tool?</h2>
+    <h3>To efficiently convert JSON format data to XML:</h3>
+    <p>
+      These days programs are not composed by single individual on a solitary
+      organization so we really want JSON to XML or the other way around assists
+      you with changing your document over to another organization effectively.
+    </p>
+    <p>
+      In future, you may come up with a file with needs to be used in a programs
+      that supports another formats. So our, converters will come into play.
+    </p>
+    <p>
+      if program does not support some formats then again we have to rewrite. So
+      just use our tools for conversation,
+    </p>
+    <h3>To get dual results:</h3>
+    <p>
+      Our apparatuses will help in changing the information from JSON over to
+      XML or XML to JSON also save the human endeavors with only a single tick
+    </p>
+    <p>&nbsp;</p>
+  </div>
+  <div>
+    <app-sb-related-tools></app-sb-related-tools>
+  </div>
+</div>

@@ -1,0 +1,122 @@
+.tool__workarea {
+  text-align: center;
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+.tool__workarea__rendered {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 8px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: none;
+}
+.tool__workarea__info {
+  margin: 42px 24px 24px;
+  width: 100%;
+}
+.tool__workarea > .wait {
+  position: fixed;
+}
+
+.tool__header {
+  padding: 6px 24px 30px;
+}
+
+.tool__header__title strong {
+  font-weight: 700;
+}
+@media (max-width: 62em) {
+  .tool__header__title {
+    font-size: 38px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 840px) {
+  .tool__header__title {
+    font-size: 34px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 460px) {
+  .tool__header__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.tool__header__subtitle {
+  max-width: 800px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #383e45;
+  letter-spacing: 0;
+  margin: 0 auto 8px;
+  line-height: 32px;
+}
+.tool__header__subtitle a:hover {
+  color: #383e45;
+}
+@media (max-width: 62em) {
+  .tool__header__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 840px) {
+  .tool__header__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 460px) {
+  .tool__header__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+
+@import '../../../styles/responsive';
+
+.tool-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container {
+  padding: 35px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-gap: 10px;
+}
+
+@include smallDesktopAndLess {
+  .tool-container {
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+}
+

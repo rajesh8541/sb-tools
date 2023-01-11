@@ -1,0 +1,65 @@
+<app-sb-heading [title]="title" [subtitle]="subtitle"></app-sb-heading>
+
+<div class="tool">
+  <div class="tool__workarea" id="workArea">
+    <div id="dropArea"></div>
+    <div class="tool__header">
+      <div class="row">
+        <div class="col d-flex justify-content-center mt-5">
+          <label class="btn btn-outline-info btn-lg">
+            Choose file from your computer
+            <input
+              type="file"
+              hidden
+              class="form-control-file"
+              (change)="fileChanged($event)"
+            />
+            <img
+              src="../../../assets/folder-icon.svg"
+              alt="folder"
+              width="30"
+              height="30"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid-container text-container">
+  <div class="">
+    <h2 id="what-is-xml">What is RAR?</h2>
+    <p>
+      A RAR document (short for a Roshal Archive Compressed record) is a packed
+      document, or information holder, that holds at least one different records
+      and envelopes within it.
+    </p>
+
+    <h2>What Are RAR Files Used For?</h2>
+    <p>
+      You'll presumably possibly run into a RAR document while you're
+      downloading PC programming. Record sharing sites and programming
+      wholesalers here and there put their records in a RAR document so they can
+      pack it down to a more modest size, permitting you to download it quicker
+      than you in any case could. Some RAR records are parted into parts for
+      simpler transmission.<br />
+      &nbsp;<br />
+      When you open a RAR document, you can separate the information from within
+      and then, at that point, utilize the documents like you would some other
+      record on you PC.
+    </p>
+    <h3>How to use this tool?</h3>
+    <ul>
+      <li>Click on choose file from your computer button.</li>
+      <li>Then choose the folder to extract.</li>
+      <li>
+        Our tool will process your folder and give option to share or download
+        the files
+      </li>
+    </ul>
+  </div>
+  <div>
+    <app-sb-related-tools></app-sb-related-tools>
+  </div>
+</div>

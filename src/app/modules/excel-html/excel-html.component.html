@@ -1,0 +1,35 @@
+<div>
+    <h1 style="color:  rgb(189, 189, 194)">EXCEL to HTML Convertor</h1>
+</div>
+<div class="main_container">
+    <div class="sub_container1">            
+            <div class="class_option">
+                <button type="button" class="option" (click)="getInput()">Load Sample</button>
+            </div>
+            <div class="class_option">
+                <label for="fileUpload" id="browse"><div class="option1"> Browse</div> </label>
+                <input type="file" id="fileUpload" class="option" accept=".xlsx" style="display: none" (change)="fileLoad($event)">
+            </div>
+            <div class="class_option ">
+                <button type="button" class="option" (click)="convert()">Show HTML</button>
+            </div>
+            <div class="class_option ">
+                <input type="button" value='Download' class="option" (click)="downloadFile()">
+            </div>
+    </div>
+    <div class="sub_container2">
+        <div class="result_bar">
+            <h4 style="text-align: center;"><b>Result:-</b></h4>
+        </div>
+        <div class="class_textarea">
+            <textarea [(ngModel)]="getResult" name="textArea" id="test1"  cols="94" rows="25"></textarea>
+        </div>
+    </div>
+</div>
+<div class="class_output" id="test">
+    <button type="button" class="option2" (click)="showOputput()">Show Output</button>
+</div>
+
+<div>
+    <app-sb-related-tools></app-sb-related-tools>
+</div>

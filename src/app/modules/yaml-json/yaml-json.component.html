@@ -1,0 +1,100 @@
+<app-sb-heading [title]="title" [subtitle]="subtitle"></app-sb-heading>
+<div class="tool-container">
+    <app-sb-textarea [type]="'input'" class="text-area" (event)="childInputText=$event"></app-sb-textarea>
+          <div class="button-align">
+                <button class="btn" (click)="convert()">YAML TO JSON</button>
+          </div>
+    <app-sb-textarea [type]="'output'" class="text-area" [parentData]="inputData"></app-sb-textarea>
+</div>
+          <div class="grid-container text-container">
+          <div>
+              <h2>YAML to JSON Converter</h2>
+              <p>
+                This is an online tool that converts your YAML format data to JSON data
+                format and vice versa. It converts YAML tree structure into an JSON
+                objects or arrays structure.
+              </p>
+              <h2>
+                  How to use this YAML TO JSON tool?
+              </h2>
+              <p>
+                The tool we designed is easy to use. Kindly follow the below steps.
+              </p>
+              <ol>
+                <li>Write or paste the YAML code into the input box.</li>
+                <li>
+                    Press the &ldquo;YAML to JSON button&rdquo; to convert the data into JSON.
+                </li>
+                <li>
+                  If you want to convert JSON to YAML, click on the &ldquo;JSON to
+                  YAML&rdquo; button.
+                </li>
+                <li>
+                  You can download or copy your result by clicking on the download or copy
+                  button.
+                </li>
+              </ol>
+              <h2>
+                  What is JSON?
+              </h2>
+              <p>
+                JSON is an open standard file format and data interchange format that uses
+                human-readable text to store and transmit data objects consisting of
+                attribute–value pairs and arrays.
+              </p>
+              <p>
+                It is a common data format with diverse uses in electronic data
+                interchange, including that of web applications with servers.
+              </p>
+              <p>
+                JSON format syntax has been derived from Javascript, but it is a language
+                independent.
+              </p>
+              <p>
+                JSON structure comprise of item or exhibit of articles , Objects are
+                key-esteem sets encased in upset commas. Clusters are likewise
+                informational collections containing key-esteem sets encased in square
+                sections. The entire code is encased in wavy sections.
+              </p>
+              <p>
+                JSON structure is as simple Javascript object structure, So it's very easy
+                to understand.
+              </p>
+              <h2>
+                What is YAML?
+              </h2>
+              <p>
+                  YAML is a comprehensible information serialization language. It is
+                  regularly utilized for design records and in applications where
+                  information is being put away or communicated.
+              </p>
+              <p>The YAML structure is very easy to use.</p>
+              <p>
+                The whole YAML is structured to obtain a hierarchal or tree structure.
+              </p>
+              <h2>Why do you need YAML to JSON tool?</h2>
+              <h3>To efficiently convert YAML format data to JSON:</h3>
+              <p>
+                These days programs are not composed by single individual on a solitary
+                arrangement so we really want YAML to JSON or the other way around assists
+                you with changing your document over to another arrangement effectively.
+              </p>
+              <p>
+                In future, you may come up with a file with needs to be used in a programs
+                that supports another formats. So our, converters will come into play.
+              </p>
+              <p>
+                if program does not support some formats then again we have to rewrite. So
+                just use our tools for conversation,
+              </p>
+              <h3>To get dual results:</h3>
+              <p>
+                Our tools will help in converting the data from YAML to JSON or JSON to
+                YAML and save the human efforts with just one click
+              </p>
+              <p>&nbsp;</p>
+            </div>
+    <div>
+      <app-sb-related-tools></app-sb-related-tools>
+    </div>
+</div>

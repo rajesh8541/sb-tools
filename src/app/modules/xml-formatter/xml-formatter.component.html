@@ -1,0 +1,110 @@
+<app-sb-heading [title]="title" [subtitle]="subtitle"></app-sb-heading>
+
+<div class="tool-container">
+  <app-sb-textarea
+    [type]="'input'"
+    class="text-area"
+    (event)="childInputText = $event"
+  ></app-sb-textarea>
+  <div class="button-align">
+    <button class="btn" (click)="convert()">Validate XML</button>
+  </div>
+  <app-sb-textarea
+    [parentData]="outputText"
+    [type]="'output'"
+    class="text-area"
+  ></app-sb-textarea>
+</div>
+
+<div class="grid-container text-container">
+  <div class="">
+    <h2 id="what-is-xml">What is XML?</h2>
+    <p>
+      Extensible Markup Language (<strong>XML</strong>) is a meta-language,
+      which represents structured information on the web, so it can be stored
+      and transmitted.
+    </p>
+    <p>
+      XML files usually contain any type of information, whether it is sensitive
+      or any range of information.&nbsp;<br />
+      XML files are composed of tags, which provide us with data and information
+      we want to deal with.
+    </p>
+    <p>
+      Normally, a XML document contains a lot of data, which should be taken
+      care of accurately by the client, particularly by the designer.&nbsp;
+    </p>
+    <p>The bigger an XML file is; the more information it will bring.</p>
+    <h2>XML Beautifier</h2>
+    <p>
+      This XML beautifier gives you the office to arrange your XML code or
+      inquiry. This is a special instrument for designing the XML and its
+      utilization is too exceptionally straightforward.
+    </p>
+    <h2>How to use XML Beautifier?</h2>
+    <p>
+      Indeed, the utilization of a web-based XML Beautifier isn't all that
+      troublesome. You just need to glue your XML code which you have duplicated
+      from the source. From that point onward, hit the &ldquo;
+      <strong> Beautify XML</strong>&rdquo; button and it will wrap up.<br />
+      &nbsp;<br />
+      The formatted output of the XML code will be in front of you in just a
+      matter of seconds.
+    </p>
+    <h3>Advantages of XML</h3>
+    <ul>
+      <li>It can be read easily.</li>
+      <li>The documents written in XML format can be easily processed.</li>
+      <li>
+        The structure of XML is easy to understand and allows you to distinguish
+        between different parts of a document.
+      </li>
+      <li>
+        It facilitates information exchange between applications, regardless of
+        the platform used.
+      </li>
+      <li>
+        It is very easy to update the documents when changing or adding labels
+        in them.
+      </li>
+      <li>
+        By implementing the XML standard of code, the user can declare their own
+        bookmarks.
+      </li>
+    </ul>
+    <h2>XML Features</h2>
+    <p>
+      Obviously, the XML diagram fundamentally manages a bunch of rules, which
+      have been created to permit bigger information to be handled in a manner
+      that is simple for the PC and the projects to deal with such information.
+    </p>
+    <p>
+      This is why it has been successfully implemented in various applications
+      and services that deal with large amounts of information (<strong
+        >such as a database</strong
+      >).
+    </p>
+    <p>
+      The prominent feature of XML resides in its design, which has been focused
+      from the start to make sure:
+    </p>
+    <ul>
+      <li>Performance excellency</li>
+      <li>Ease of use in web services&nbsp;</li>
+      <li>Success in the field of large-scale electronic media publishing</li>
+      <li>Simplicity of implementation&nbsp;</li>
+    </ul>
+    <p>
+      One more element of XML records is the finished division of design also
+      plan, which permits the information contained to be sent out to other
+      designs, like HTML, PDF, RTF, and so on&nbsp;
+    </p>
+    <p>
+      In addition, a basic function is the ability to share data between
+      different systems and platforms, such as web pages and databases.
+    </p>
+  </div>
+  <div>
+    <app-sb-related-tools></app-sb-related-tools>
+  </div>
+</div>
